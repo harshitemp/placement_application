@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Button Pressed State (Darker Blue) -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#002F6C"/> <!-- Dark Navy Blue -->
+            <corners android:radius="16dp"/>
+        </shape>
+    </item>
+
+    <!-- Normal State (Gradient Matching the Background) -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="45"
+                android:startColor="#004AAD"
+                android:endColor="#8A2BE2"
+                android:type="linear"/>
+            <corners android:radius="16dp"/>
+        </shape>
+    </item>
+
+</selector>

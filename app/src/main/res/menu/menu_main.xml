@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Dashboard Item -->
+    <item
+        android:id="@+id/menu_dashboard"
+        android:title="Dashboard"
+        android:icon="@drawable/ic_dashboard"
+        app:showAsAction="never" />
+
+    <!-- View Student Profile Item -->
+    <item
+        android:id="@+id/menu_profile"
+        android:title="View Student Profile"
+        android:icon="@drawable/ic_profile"
+        app:showAsAction="never" />
+
+    <!-- Apply for Jobs Item -->
+    <item
+        android:id="@+id/menu_apply_jobs"
+        android:title="Apply for Jobs"
+        android:icon="@drawable/ic_apply_jobs"
+        app:showAsAction="never" />
+
+</menu>

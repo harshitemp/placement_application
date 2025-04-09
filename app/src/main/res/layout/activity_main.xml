@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logobg1"
+        android:alpha="0.5" />
+
+    <!-- Semi-transparent Overlay -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80FFFFFF" />
+
+    <!-- Content Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <!-- Heading -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Your Role"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Student Checkbox -->
+        <CheckBox
+            android:id="@+id/checkbox_student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/checkbox_student"
+            android:textColor="#FF333333"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:buttonTint="@color/design_default_color_primary"
+            android:layout_marginBottom="16dp" />
+
+        <!-- TPO Checkbox -->
+        <CheckBox
+            android:id="@+id/checkbox_tpo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/checkbox_tpo"
+            android:textColor="#FF333333"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:buttonTint="@color/design_default_color_primary"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="12dp"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="20dp"
+            android:enabled="false"/>
+
+    </LinearLayout>
+</FrameLayout>

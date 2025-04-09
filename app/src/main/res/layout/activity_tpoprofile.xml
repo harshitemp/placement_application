@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    android:padding="16dp"
+    tools:context=".TPOprofile">
+
+    <!-- Top Navigation Bar with Logo and Image Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3F51B5"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+        <!-- Logo (Perfect Fit) -->
+        <ImageView
+            android:id="@+id/imgTpoLogo"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:contentDescription="TPO Logo"
+            android:src="@drawable/logobg1"
+            android:scaleType="fitCenter" />
+
+        <!-- Spacer to add space between logo and buttons -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <!-- Dashboard Button (Perfect Fit) -->
+        <ImageButton
+            android:id="@+id/btnDashboard"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Dashboard"
+            android:src="@drawable/ic_dashboard"
+            android:padding="5dp"
+            android:scaleType="fitCenter" />
+
+        <!-- Job Applied Students Button (Perfect Fit) -->
+        <ImageButton
+            android:id="@+id/btnJobAppliedStudents"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Job Applied Students"
+            android:src="@drawable/ic_apply_jobs"
+            android:padding="5dp"
+            android:scaleType="fitCenter" />
+
+        <!-- Post Jobs Button (Perfect Fit) -->
+        <ImageButton
+            android:id="@+id/btnPostJobs"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Post Jobs"
+            android:src="@drawable/ic_post_jobs"
+            android:padding="5dp"
+            android:scaleType="fitCenter" />
+    </LinearLayout>
+
+    <!-- Welcome Message -->
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome, TPO!"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="32dp" />
+
+    <!-- Profile Details -->
+    <TextView
+        android:id="@+id/tvProfileDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profile Details:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/tvTpoName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name: "
+        android:textSize="18sp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tvTpoEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tvTpoPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone:"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp" />
+
+    <!-- Dashboard Section Description -->
+    <TextView
+        android:id="@+id/tvDashboardDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manage and monitor student applications, job postings, and more!"
+        android:textSize="16sp"
+        android:layout_marginTop="32dp" />
+
+</LinearLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Placement Portal</string>
+    <string name="checkbox_student">Student</string>
+    <string name="checkbox_tpo">Training and Placement Officer</string>
+</resources>
